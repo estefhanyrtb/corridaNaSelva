@@ -15,12 +15,14 @@ import lombok.Setter;
 public class Inscricao {
     @Id
     private Long id;
-    private Long circuito_Id;
     private double valor_Incricao;
-
 
     @ManyToOne
     private Maratonista maratonista;
 
     @ManyToOne
+    private Circuito circuito;
 }
+
+
+
